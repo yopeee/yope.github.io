@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION AND SECTION 1 */ 
+
+.logo {
+    cursor: pointer;
+    font-size : 36px;
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff;
+}
+
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    background-image: url('gradient.jpg');
+    background-size: cover;
+}
+
+h1, p { 
+    color: #161616;
+}
+
+.navigation {
+    height: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.grow {
+    transition: .3s ease;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.homepage { 
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+
+.homepage p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+
+/* SECTION 2 */
+
+.introduction {
+    overflow: auto;
+    padding: 150px 0px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.introduction img {
+    margin-right: 100px;
+    height: 400px;
+    width: 400px;
+    transition: .4s ease;
+}
+
+.introduction img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1)
+}
+
+.introduction h1 {
+    margin-bottom: 45px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+}
+
+.introduction p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.intro {
+    width: 550px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    padding: 100px 0px;
+    overflow: auto;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.portfolio h1 {
+    margin: 25px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+}
+
+.portfolio .box {
+    margin: 50px 25px;
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #808080;
+    border-radius: 15px;
+}
+
+.box {
+    transition: .3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow: 0 0 25px 0px grey;
+}
+
+.portfolio .box img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 25px auto;
+}
+
+.portfolio .box a {
+    display: inline-block;
+    margin: 5px 0px 15px 0px;
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s ease;
+}
+
+.portfolio .box a:hover {
+    background-color: #161616;
+    color: #fafafa;
+}
+
+.portfolio .box p {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 260px;
+}
+
+.portfolio .box h1 {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 500px;
+}
+
+/* Quotes */
+
+.quotes {
+    padding: 100px 0px 250px 0px;
+    background-color: #fafafa;
+    align-items: center;
+    text-align: center;
+}
+
+.quotes h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 45px;
+}
+
+.quotes p {
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 30px;
+    height: 30px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.fa {
+    padding: 15px;  
+    margin: 0px 5px;  
+    font-size: 25px;  
+    width: 25px;
+    height: 25px;  
+    line-height: 25px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #161616;
+    border-radius: 100px;
+}
+
+/* Tablet and Phone */
+@media only screen and (min-width:500px) and (max-width:1000px) {
+
+    /* Header + Navigation*/
+    .logo {
+        font-size : 24px;
+    }
+    
+    li, a {
+        font-size: 12px;
+    }
+
+    .navigation {
+        padding: 25px;
+    }
+    
+    .nav li {
+        padding: 0px 20px;
+    }
+
+    .homepage h1 {
+        font-size: 45px;
+    }
+
+    .homepage p {
+        font-size: 20px;
+    }
+
+    /* About Me */
+    .introduction {
+        padding: 100px 50px 100px 50px;
+    }
+
+    .introduction img {
+        margin-right: 50px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .introduction h1 {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+        
+    .introduction p {
+        font-size: 14px;
+    }
+
+    /* Portfolio */
+    .portfolio h1 {
+        font-size: 24px;
+    }
+
+    .portfolio p {
+        font-size: 8px;
+    }
+
+    .portfolio .box {
+        margin: 25px;
+        width: 300px;
+        height: 425px;
+    }
+
+    .portfolio .box img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio .box a {
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .portfolio .box h1 {
+        margin: 0px;
+        line-height: 425px;
+    }
+
+    /* Quotes */
+    .quotes h1 {
+        font-size: 30px;
+    }
+    
+    .quotes p {
+        padding-bottom: 25px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer p {
+        font-size: 12px;
+    }
+
+    .fa {
+        padding: 12px;  
+        font-size: 18px;  
+        width: 20px;
+        height: 20px;  
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-width:301px) and (max-width:499px) {
+
+    /* Header + Navigation*/
+    .logo {
+        font-size : 20px;
+    }
+    
+    li, a {
+        font-size: 10px;
+    }
+
+    .navigation {
+        padding: 20px;
+    }
+    
+    .nav li {
+        padding: 0px 15px;
+    }
+
+    .homepage h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .homepage p {
+        font-size: 12px;
+    }
+
+    /* About Me */
+    .introduction {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .introduction img {
+        margin: 0px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .introduction h1 {
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+        
+    .introduction p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .intro {
+        width: 320px;
+    }
+
+    /* Portfolio */
+    .portfolio h1 {
+        font-size: 20px;
+    }
+
+    .portfolio .box p {
+        font-size: 10px;
+    }
+
+    .portfolio .box {
+        padding: 10px;
+        margin: 15px;
+        width: 250px;
+        height: 375px;
+    }
+
+    .portfolio .box img {
+        width: 200px;
+        height: 230px;
+        margin-bottom: 15px;
+    }
+
+    .portfolio .box a {
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+    }
+
+    .portfolio .box h1 {
+        margin: 0px;
+        line-height: 375px;
+    }
+
+    /* Quotes */
+
+    .quotes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quotes h1 {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    .quotes p {
+        padding-bottom: 15px;
+        font-size: 10px;
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 8px;
+    }
+
+    .fa {
+        margin: 0px 3px;
+        padding: 10px;  
+        font-size: 12px;  
+        width: 12px;
+        height: 12px;  
+        line-height: 12px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    /* Header + Navigation*/
+    .logo {
+        font-size : 15px;
+    }
+    
+    li, a {
+        font-size: 10px;
+    }
+
+    .navigation {
+        padding: 20px;
+    }
+    
+    .nav li {
+        padding: 0px 8px;
+    }
+
+    .homepage h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .homepage p {
+        font-size: 12px;
+    }
+
+    /* About Me */
+    .introduction {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .introduction img {
+        margin: 0px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .introduction h1 {
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+        
+    .introduction p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .intro {
+        width: auto;
+    }
+
+    /* Portfolio */
+    .portfolio h1 {
+        font-size: 20px;
+    }
+
+    .portfolio .box p {
+        font-size: 8px;
+        width: 150px;
+    }
+
+    .portfolio .box {
+        padding: 10px;
+        margin: 15px;
+        width: 185px;
+        height: 300px;
+    }
+
+    .portfolio .box img {
+        width: 170px;
+        height: 185px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio .box a {
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+    }
+
+    .portfolio .box h1 {
+        margin: 0px;
+        line-height: 300px;
+    }
+
+    /* Quotes */
+
+    .quotes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quotes h1 {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    .quotes p {
+        padding-bottom: 15px;
+        font-size: 10px;
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer p {
+        font-size: 8px;
+    }
+
+    .fa {
+        margin: 15px 3px 0px 3px;
+        padding: 10px;  
+        font-size: 12px;  
+        width: 12px;
+        height: 12px;  
+        line-height: 12px;
+    }
+}
+
+/* @media only screen and (max-width:999px) and (min-width:700px) {
+    .introduction {
+        padding: 100px 60px;
+    }
+    .introduction img {
+        margin-right: 50px;
+        height: 220px;
+        width: 220px;
+    }
+
+    .introduction h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+        
+    .introduction p {
+        font-size: 16px;
+    }
+} */
