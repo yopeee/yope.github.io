@@ -619,23 +619,3 @@ h1, p {
         line-height: 12px;
     }
 }
-
-/* @media only screen and (max-width:999px) and (min-width:700px) {
-    .introduction {
-        padding: 100px 60px;
-    }
-    .introduction img {
-        margin-right: 50px;
-        height: 220px;
-        width: 220px;
-    }
-
-    .introduction h1 {
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-        
-    .introduction p {
-        font-size: 16px;
-    }
-} */
